@@ -24,3 +24,4 @@ Issues:
     resize sign-up picture
   DONE: add margin-bottom to h1,h2,h3
   Grid media queries system
+  Make nav absolute
