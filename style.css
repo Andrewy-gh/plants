@@ -104,7 +104,7 @@ video {
     'rattlesnake-plant';
 }
 
-@media (min-width: 901px) {
+@media (min-width: 56.3125rem) {
   .best-sellers-grid {
     grid-template-areas:
       'rubber-fig monstera monstera monstera '
@@ -130,7 +130,7 @@ video {
 /* sections */
 .showcase,
 .overlay {
-  height: 650px;
+  height: 46.875rem;
 }
 
 .showcase {
