@@ -22,11 +22,13 @@ Issues:
   Make nav container wider - play with padding more. 
   DONE: Image sizes again
     DONE: resize sign-up picture
+    =======
     .video,
     .sign-up,
     .footer {
       grid-template-columns: auto auto;
     }
+    =======
   DONE: add margin-bottom to h1,h2,h3
   Grid media queries system
   Make nav absolute
