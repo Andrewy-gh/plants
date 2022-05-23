@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+    <title>Plant Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav grid three-col container ff-accent">
+          <!-- Possibly make this wider -->
+          <div style="place-self: center start">Logo</div>
+          <div style="place-self: center center">
+            <span>Plants</span>
+            <span>Tools</span>
+            <span>Care</span>
+          </div>
+          <div style="place-self: center end">
+            <span>Search</span>
+            <span>Account</span>
+            <span>Cart</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Showcase -->
+      <div class="showcase">
+        <div class="overlay">
+          <section class="grid container">
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Itaque, quod?
+              </p>
+              <button>Shop now</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Featured -->
+      <!-- added flow -->
+      <section class="flow container">
+        <p class="ff-accent">Featured Collections</p>
+        <div class="grid three-col">
+          <div class="featured">
+            <img src="./assets/annie-spratt-ncQ2sguVlgo-unsplash.jpg" alt="" />
+            <div>
+              <p>Succulents</p>
+            </div>
+          </div>
+          <div class="featured">
+            <img
+              src="./assets/alyssa-strohmann-vkpKUtMmMQQ-unsplash.jpg"
+              alt=""
+            />
+            <div>
+              <p>Planters</p>
+            </div>
+          </div>
+          <div class="featured">
+            <img
+              src="./assets/charlesdeluvio-OIRoFbbQa3E-unsplash.jpg"
+              alt=""
+            />
+            <div>
+              <p>Placeholder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section class="container">
+        <div class="ff-accent">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem eum
+            illo quae non esse tempora impedit perspiciatis animi corporis
+            corrupti?
+          </p>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="grid container video">
+        <div>
+          <video autoplay loop>
+            <source src="./assets/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div>
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            aliquid fuga quos asperiores exercitationem obcaecati dolorem
+            mollitia ad tempora voluptatibus.
+          </p>
+        </div>
+      </section>
+
+      <!-- Best sellers -->
+      <section class="container">
+        <h3>Best Sellers</h3>
+        <div class="best-sellers-grid grid">
+          <div class="best-seller">
+            <img
+              src="./assets/severin-candrian-tFgPInnCxYs-unsplash.jpg"
+              alt="monstera"
+            />
+          </div>
+          <div class="best-seller">
+            <img
+              src="./assets/severin-candrian-17UXXzGF7RA-unsplash.jpg"
+              alt="rubber fig"
+            />
+          </div>
+          <div class="best-seller">
+            <img
+              src="./assets/severin-candrian-WQq3rRPb-5Q-unsplash.jpg"
+              alt="snake plant"
+            />
+          </div>
+          <div class="best-seller">
+            <img
+              src="./assets/severin-candrian-KeHEsF-0Xmg-unsplash.jpg"
+              alt="rattlesnake"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sign up -->
+      <section class="sign-up grid container">
+        <div>
+          <img
+            src="./assets/charisse-kenion-SS5JorRD4xQ-unsplash.jpg"
+            alt="storefront with plants outside"
+          />
+        </div>
+        <div>
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, assumenda? Pariatur aliquam est aut cum!
+          </p>
+          <button>Sign up!</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer grid container ff-200" style="margin: 5rem auto">
+      <div class="grid three-col" style="place-self: center start">
+        <div>
+          <h4>Lorem, ipsum.</h4>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <div>
+          <h4>Lorem, ipsum.</h4>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <div>
+          <h4>Lorem, ipsum.</h4>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+      <div style="place-self: center end">
+        <h4>Follow Us:</h4>
+        <a><i class="fa-brands fa-instagram" style="font-size: 20px"></i></a>
+        <a><i class="fa-brands fa-twitter" style="font-size: 20px"></i></a>
+        <a><i class="fa-brands fa-facebook" style="font-size: 20px"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

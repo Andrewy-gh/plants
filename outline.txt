@@ -1,0 +1,26 @@
+- Logo
+- One big picture or three big picture slideshow
+- Three small pictures
+- One video 
+- One big picture
+- Three small pictures
+- One tall picture
+
+Total: 2 - 5 Big pictures
+    6 small pictures
+    1 video
+    1 tall picture
+    1 Logo
+Total: 12 pictures
+    1 video
+    1 Logo
+
+Components: slideshow automatic
+          video Components
+          
+Issues:
+  Make nav container wider - play with padding more. 
+  Image sizes again
+    resize sign-up picture
+  DONE: add margin-bottom to h1,h2,h3
+  Grid media queries system

@@ -1,0 +1,148 @@
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Playfair Display', serif;
+
+  --ff-400: 1.3125rem;
+  --ff-300: 1rem;
+  --ff-200: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: var(--ff-400);
+  line-height: 1.6;
+
+  min-height: 100vh;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+section {
+  padding: 4em 0;
+}
+
+.nav,
+.footer {
+  width: max(90%, 70.5rem);
+  padding: 2em 0;
+}
+
+.flow > *:where(:not:first-child) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Best sellers */
+.best-sellers-grid {
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'monstera'
+    'rubber-fig'
+    'snake-plant'
+    'rattlesnake-plant';
+}
+
+@media (min-width: 901px) {
+  .best-sellers-grid {
+    grid-template-areas:
+      'rubber-fig monstera monstera monstera '
+      'snake-plant monstera monstera monstera '
+      'rattlesnake-plant monstera monstera monstera ';
+  }
+}
+
+.best-seller:nth-child(1) {
+  grid-area: monstera;
+  max-height: 100%;
+}
+.best-seller:nth-child(2) {
+  grid-area: rubber-fig;
+}
+.best-seller:nth-child(3) {
+  grid-area: snake-plant;
+}
+.best-seller:nth-child(4) {
+  grid-area: rattlesnake-plant;
+}
+
+/* sections */
+.showcase,
+.overlay {
+  height: 650px;
+}
+
+.showcase {
+  background: url(./assets/chris-abney-qLW70Aoo8BE-unsplash.jpg) center/cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.featured > img {
+  object-fit: cover;
+}
+
+/* Videos */
+video {
+  max-width: 853px;
+}
+
+.video,
+.sign-up,
+.footer {
+  grid-template-columns: auto auto;
+}
+
+/* Font */
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+
+.ff-200 {
+  font-size: var(--ff-200);
+}
