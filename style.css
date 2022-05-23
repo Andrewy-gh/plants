@@ -75,6 +75,24 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.featured > img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Videos */
+video {
+  max-width: 853px;
+}
+
+.video,
+.sign-up,
+.footer {
+  grid-template-columns: auto auto;
+}
+
 /* Best sellers */
 .best-sellers-grid {
   gap: 1.5rem;
@@ -121,21 +139,6 @@ section {
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.featured > img {
-  object-fit: cover;
-}
-
-/* Videos */
-video {
-  max-width: 853px;
-}
-
-.video,
-.sign-up,
-.footer {
-  grid-template-columns: auto auto;
 }
 
 /* Font */
