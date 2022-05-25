@@ -17,36 +17,41 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="scripts.js" defer></script>
     <title>Plant Shop</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav grid three-col container ff-accent">
-          <!-- Possibly make this wider -->
-          <div style="place-self: center start">Logo</div>
-          <div style="place-self: center center">
-            <span>Plants</span>
-            <span>Tools</span>
-            <span>Care</span>
+    <div class="bg-dark-light text-light">
+      <header>
+        <nav>
+          <div
+            class="nav grid three-col container ff-accent"
+            style="margin: 0 auto"
+          >
+            <!-- Possibly make this wider -->
+            <div style="place-self: center start">Logo</div>
+            <div style="place-self: center center">
+              <span>Plants</span>
+              <span>Tools</span>
+              <span>Care</span>
+            </div>
+            <div style="place-self: center end">
+              <span>Search</span>
+              <span>Account</span>
+              <span>Cart</span>
+            </div>
           </div>
-          <div style="place-self: center end">
-            <span>Search</span>
-            <span>Account</span>
-            <span>Cart</span>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
 
     <main>
       <!-- Showcase -->
       <div class="showcase">
         <div class="overlay">
-          <section class="grid container" style="height: 100%">
+          <section class="grid container" style="height: 100%; margin: 0 auto">
             <div style="width: 25ch; place-self: center start">
               <h1>Welcome</h1>
               <p>
@@ -109,7 +114,7 @@
             <source src="./assets/video.mp4" type="video/mp4" />
           </video>
         </div>
-        <div>
+        <div class="flow">
           <h3>Lorem, ipsum.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -158,7 +163,7 @@
             alt="storefront with plants outside"
           />
         </div>
-        <div>
+        <div class="flow">
           <h3>Lorem, ipsum.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -169,36 +174,38 @@
       </section>
     </main>
 
-    <footer class="footer grid container ff-200" style="margin: 5rem auto">
-      <div class="grid three-col" style="place-self: center start">
-        <div>
-          <h4>Lorem, ipsum.</h4>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
+    <div class="bg-dark text-light">
+      <footer class="footer grid container ff-200">
+        <div class="grid three-col" style="place-self: center start">
+          <div>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+          </div>
+          <div>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+          </div>
+          <div>
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+          </div>
         </div>
-        <div>
-          <h4>Lorem, ipsum.</h4>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
+        <div style="place-self: center end">
+          <h4>Follow Us:</h4>
+          <a><i class="fa-brands fa-instagram" style="font-size: 20px"></i></a>
+          <a><i class="fa-brands fa-twitter" style="font-size: 20px"></i></a>
+          <a><i class="fa-brands fa-facebook" style="font-size: 20px"></i></a>
         </div>
-        <div>
-          <h4>Lorem, ipsum.</h4>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-        </div>
-      </div>
-      <div style="place-self: center end">
-        <h4>Follow Us:</h4>
-        <a><i class="fa-brands fa-instagram" style="font-size: 20px"></i></a>
-        <a><i class="fa-brands fa-twitter" style="font-size: 20px"></i></a>
-        <a><i class="fa-brands fa-facebook" style="font-size: 20px"></i></a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
