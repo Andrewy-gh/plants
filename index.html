@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css" />
     <script src="scripts.js" defer></script>
     <title>Plant Shop</title>
@@ -45,14 +46,14 @@
       <!-- Showcase -->
       <div class="showcase">
         <div class="overlay">
-          <section class="grid container">
-            <div style="width: 25ch; place-self: end start">
+          <section class="grid container" style="height: 100%">
+            <div style="width: 25ch; place-self: center start">
               <h1>Welcome</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Itaque, quod?
               </p>
-              <button>Shop now</button>
+              <button class="btn">Shop now</button>
             </div>
           </section>
         </div>
@@ -103,7 +104,7 @@
 
       <!-- Video -->
       <section class="grid container video">
-        <div>
+        <div class="video-container" style="place-self: center start">
           <video autoplay loop>
             <source src="./assets/video.mp4" type="video/mp4" />
           </video>
@@ -163,7 +164,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, assumenda? Pariatur aliquam est aut cum!
           </p>
-          <button>Sign up!</button>
+          <button class="btn">Sign up!</button>
         </div>
       </section>
     </main>
