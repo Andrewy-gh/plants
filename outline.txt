@@ -30,6 +30,8 @@ Issues:
     }
     =======
   DONE: add margin-bottom to h1,h2,h3
-  Grid media queries system
+  WORKING: Grid media queries system
+    Forms media queries
   Make nav absolute
-  Start color scheme
+  DONE: Start color scheme
+
