@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="bg-dark-light text-light">
-      <header>
+      <header class="fs-300">
         <nav>
           <div
             class="nav grid three-col container ff-accent"
@@ -32,15 +32,15 @@
           >
             <!-- Possibly make this wider -->
             <div style="place-self: center start">Logo</div>
-            <div style="place-self: center center">
+            <div class="flex" style="place-self: center center; --gap: 3em">
               <span>Plants</span>
               <span>Tools</span>
               <span>Care</span>
             </div>
-            <div style="place-self: center end">
-              <span>Search</span>
-              <span>Account</span>
-              <span>Cart</span>
+            <div class="flex" style="place-self: center end">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span><i class="fa-solid fa-user"></i></span>
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
             </div>
           </div>
         </nav>
@@ -52,7 +52,10 @@
       <div class="showcase">
         <div class="overlay">
           <section class="grid container" style="height: 100%; margin: 0 auto">
-            <div style="width: 25ch; place-self: center start">
+            <div
+              class="flow text-light"
+              style="width: 25ch; place-self: center start"
+            >
               <h1>Welcome</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -98,12 +101,12 @@
 
       <!-- Call to action -->
       <section class="container">
-        <div class="ff-accent">
-          <p>
+        <div style="text-align: center">
+          <h2 class="text-dark">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem eum
             illo quae non esse tempora impedit perspiciatis animi corporis
             corrupti?
-          </p>
+          </h2>
         </div>
       </section>
 
@@ -163,19 +166,30 @@
             alt="storefront with plants outside"
           />
         </div>
-        <div class="flow">
+        <div class="flow" style="place-self: center end; width: 45ch">
           <h3>Lorem, ipsum.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, assumenda? Pariatur aliquam est aut cum!
           </p>
-          <button class="btn">Sign up!</button>
+          <form
+            class="flow"
+            action="
+          "
+          >
+            <input
+              class="email-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn">Sign up!</button>
+          </form>
         </div>
       </section>
     </main>
 
     <div class="bg-dark text-light">
-      <footer class="footer grid container ff-200">
+      <footer class="footer grid container fs-200">
         <div class="grid three-col" style="place-self: center start">
           <div>
             <h4>Lorem, ipsum.</h4>
@@ -200,10 +214,14 @@
           </div>
         </div>
         <div style="place-self: center end">
-          <h4>Follow Us:</h4>
-          <a><i class="fa-brands fa-instagram" style="font-size: 20px"></i></a>
-          <a><i class="fa-brands fa-twitter" style="font-size: 20px"></i></a>
-          <a><i class="fa-brands fa-facebook" style="font-size: 20px"></i></a>
+          <h3 style="text-align: center">Follow Us:</h3>
+          <div class="flex">
+            <a
+              ><i class="fa-brands fa-instagram" style="font-size: 20px"></i
+            ></a>
+            <a><i class="fa-brands fa-twitter" style="font-size: 20px"></i></a>
+            <a><i class="fa-brands fa-facebook" style="font-size: 20px"></i></a>
+          </div>
         </div>
       </footer>
     </div>

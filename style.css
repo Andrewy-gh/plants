@@ -2,21 +2,25 @@
   --ff-primary: 'Roboto', sans-serif;
   --ff-accent: 'Playfair Display', serif;
 
-  --clr-dark: black;
-  --clr-dark-light: grey;
-  --clr-light: white;
-  --clr-accent: purple;
+  /* Discreet Palette */
+  --clr-dark: #3f7e24;
+  --clr-dark-light: #7e9870;
+  --clr-light: #f5fbf1;
+  --clr-accent: #9999cc;
 
-  --ff-400: 1.3125rem;
-  --ff-300: 1rem;
-  --ff-200: 0.875rem;
+  --fs-500: 2rem;
+  --fs-400: 1.3125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
 }
 
 body {
   font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: var(--ff-400);
+  font-size: var(--fs-400);
   line-height: 1.6;
+  background: var(--clr-light);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h1,
@@ -29,6 +33,10 @@ h4 {
   margin-bottom: 1em;
 }
 
+h1 {
+  font-size: var(--fs-500);
+}
+
 .container {
   /* margin-inline: auto; */
   margin: 1rem auto 0;
@@ -39,6 +47,7 @@ section {
   padding: 4em 0;
 }
 
+/* wider container */
 .nav,
 .footer {
   width: 90vw;
@@ -55,10 +64,16 @@ section {
   margin-top: var(--flow-space, 1rem);
 }
 
-/* Grid */
+/* used to space icons */
+.flex {
+  display: flex;
+  gap: var(--gap, 1.5em);
+}
+
+/* === Grid === */
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: var(--gap, 1rem);
 }
 
 /* header and featured */
@@ -84,7 +99,7 @@ section {
 
 /* Videos */
 .video-container {
-  max-width: 853px;
+  max-width: 53.3125rem;
 }
 
 video {
@@ -103,7 +118,7 @@ video {
     'rattlesnake-plant';
 }
 
-@media (min-width: 429px) {
+@media (min-width: 26.8125rem) {
   .best-sellers-grid {
     grid-template-areas:
       'monstera rubber-fig'
@@ -147,10 +162,21 @@ video {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*  */
+/* Forms */
+.email-input {
+  font-size: 1.25rem;
+  padding: 0.5em 1.25em;
+  border-radius: 0.3594rem;
+  color: var(--clr-accent);
+}
+
 .btn {
-  font-size: 1rem;
-  padding: 0.5em 1em;
+  font-size: 1.25rem;
+  padding: 0.5em 1.25em;
+  border-radius: 0.3594rem;
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  border: none;
 }
 
 /*  */
@@ -166,11 +192,19 @@ video {
   color: var(--clr-light);
 }
 
+.text-dark {
+  color: var(--clr-dark);
+}
+
 /* Font */
 .ff-accent {
   font-family: var(--ff-accent);
 }
 
-.ff-200 {
-  font-size: var(--ff-200);
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
 }
