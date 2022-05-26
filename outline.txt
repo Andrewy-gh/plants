@@ -19,7 +19,7 @@ Components: slideshow automatic
           video Components
           
 Issues:
-  Make nav container wider - play with padding more. 
+  DONE: Make nav container wider - play with padding more. 
   DONE: Image sizes again
     DONE: resize sign-up picture
     =======
@@ -33,5 +33,7 @@ Issues:
   WORKING: Grid media queries system
     Forms media queries
   Make nav absolute
+    Add hover menus
   DONE: Start color scheme
+
 
