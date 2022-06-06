@@ -43,3 +43,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* == Mines == */
+button {
+  cursor: pointer;
+}

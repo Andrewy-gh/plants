@@ -108,6 +108,24 @@ video {
 }
 
 /* Best sellers */
+.hidden-details {
+  display: none;
+  position: absolute;
+  bottom: 1.5em;
+  left: 1em;
+  z-index: 2;
+}
+
+.best-seller {
+  position: relative;
+  z-index: 1;
+}
+
+.best-seller:hover .hidden-details {
+  display: inline-block;
+
+}
+
 .best-sellers-grid {
   gap: 1.5rem;
   grid-auto-columns: 1fr;
