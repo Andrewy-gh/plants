@@ -35,5 +35,6 @@ Issues:
   Make nav absolute
     Add hover menus
   DONE: Start color scheme
+  Hover links
 
 

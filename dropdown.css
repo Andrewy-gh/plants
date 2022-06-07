@@ -1,16 +1,32 @@
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Playfair Display', serif;
+
+  /* Discreet Palette */
+  --clr-dark: #3f7e24;
+  --clr-dark-light: #7e9870;
+  --clr-light: #f5fbf1;
+  --clr-accent: #9999cc;
+
+  --fs-500: 2rem;
+  --fs-400: 1.3125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
 /* Dropdown nav */
 .dropdown {
   font-size: 0.875rem;
 }
 
- /* Dropdown Button */
+/* Dropdown Button */
 .dropbtn {
-  color: hsl( var(--clr-light) );
-  background-color: red;
-/*   padding: 16px; */
+  color: hsl(var(--clr-light));
+  background-color: var(--clr-dark-light);
+  /*   padding: 16px; */
   padding: 1.0625rem 2em;
   /* padding-bottom: 1.0625rem; */
-  
+
   border: none;
 }
 
@@ -24,10 +40,10 @@
 .dropdown-content {
   display: none;
   position: absolute;
-/*   background-color: var(--clr-dark-light); */
-  background-color: red;
+  /*   background-color: var(--clr-dark-light); */
+  background-color: var(--clr-dark-light);
   min-width: 2em;
-/*   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /*   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 
@@ -35,16 +51,20 @@
 .dropdown-content a {
   color: black;
   /* padding: 12px 16px; */
-  padding: .5em 2em 1em;
+  padding: 0.5em 2em 1em;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: #000;}
+.dropdown-content a:hover {
+  color: #000;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
