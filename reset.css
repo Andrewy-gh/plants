@@ -48,3 +48,8 @@ h6 {
 button {
   cursor: pointer;
 }
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}

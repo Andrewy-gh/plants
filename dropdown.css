@@ -1,18 +1,4 @@
-:root {
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-accent: 'Playfair Display', serif;
 
-  /* Discreet Palette */
-  --clr-dark: #3f7e24;
-  --clr-dark-light: #7e9870;
-  --clr-light: #f5fbf1;
-  --clr-accent: #9999cc;
-
-  --fs-500: 2rem;
-  --fs-400: 1.3125rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
-}
 
 /* Dropdown nav */
 .dropdown {
